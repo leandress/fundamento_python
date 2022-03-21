@@ -1,1 +1,4 @@
-# fundamento_python
+# Fundamento de Python
+
+Autor:
+Leandres Lopez 
