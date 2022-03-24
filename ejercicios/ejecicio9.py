@@ -7,8 +7,8 @@ edad=input("infrese su edad ")
 print("los nombre de usuario")
 
 a=nombre+apellido
-print(a.title())
+print("@"+a.title())
 b=nombre+"."+apellido
-print(b.lower())
+print("@"+b.lower())
 c=nombre+"_"+apellido+"_"+edad
-print(c.lower())
+print("@"+c.lower())
