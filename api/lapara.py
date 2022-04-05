@@ -8,7 +8,7 @@
 
 x=0
 import requests
-url="https://pokeapi.co/api/v2/pokemon{}"
+url="https://pokeapi.co/api/v2/pokemon"
 respuesta=requests.get(url)
 if respuesta:
   datos=respuesta.json()
@@ -17,10 +17,13 @@ if respuesta:
     print(x,nombres ["name"])
 
   id=int(input("digite el id"))
-  url=f"https://pokeapi.co/api/v2/pokemon{id}"
-  print("
-        
-        ")
+  
+  url1=f"https://pokeapi.co/api/v2/pokemon/{id}"
+  respuesta2=requests.get(url1)
+  datos2=respuesta2.json() 
+  if respuesta2:
+    print(datos2["abilities"][0]["ability"] ["name"])
+
   
 else:
   print("no funciona")
