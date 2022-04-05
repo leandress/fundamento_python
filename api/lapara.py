@@ -22,7 +22,8 @@ if respuesta:
   respuesta2=requests.get(url1)
   datos2=respuesta2.json() 
   if respuesta2:
-    print(datos2["abilities"][0]["ability"] ["name"])
+    for nombres2 in datos2["abilities"]:
+      print(nombres2  ["ability"]["name"])
 
   
 else:
